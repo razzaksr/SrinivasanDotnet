@@ -1,20 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.WriteLine("Hello, World!");
-
-/*
-using MyFiles;
-
-Hai h = new Hai();
-h.saySome();
-
-Access ac = new Access();
-ac.doSome();
-*/
+﻿// Operators : Arithmetic: + - * / %
 
 using SrinivasanBasic;
 
-Casting cast = new Casting();
-cast.discussionOnTypes();
-cast.discussionOnParsing();
-
-Casting.discussionOnExplicit();
+Operators op = new Operators();
+//op.arithmetic();
+op.unary();
