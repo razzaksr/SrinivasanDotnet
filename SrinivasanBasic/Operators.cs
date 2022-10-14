@@ -8,6 +8,37 @@ namespace SrinivasanBasic
 {
     internal class Operators
     {
+        public void precedence()
+        {
+            // Bracket Of(Unary) Divide Multiply Addition Subtraction
+            //double sink = 8.9;int water = 11; double result = 0;
+            //result = (sink--) + (water += 5) - (sink /= 2);
+            //Console.WriteLine(result);
+
+            short say = 34;char tick = 'Q';int result = 0;
+            //result = (++tick) - (say -= 10) + (tick /=(char) 2);
+            // 82 - 24 + 41 >> 58+41>> 99
+
+            result = (say*=2)+(tick--)/(say-=9);
+            // 68 + 81 / 59 >> 68+1
+            Console.WriteLine(result);
+        }
+        public void shortHand()
+        {
+            // assignment operator : += -= *= /= %=
+            // syntax: var1+=var2>> var1 = var1+var2
+            // first obj/var should be same as storing var/obj
+            // var2=var1+var2;
+
+            // char -127 to 128
+
+            char hai = 'R';int yet = 99;
+            Console.WriteLine("Character " + hai + " Integer " + yet);
+            hai *=(char) yet;
+            yet = hai / yet;
+            hai /= (char) yet;
+            Console.WriteLine("Character " + hai + " Integer " + yet);
+        }
         public void unary()
         {
             // ++   >> increment + 1
