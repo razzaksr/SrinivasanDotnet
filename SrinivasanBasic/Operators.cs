@@ -8,6 +8,97 @@ namespace SrinivasanBasic
 {
     internal class Operators
     {
+        public void logicals()
+        {
+            // && || !
+            dynamic aadhaar = "", pan = "", propertyValue=0;
+            Console.WriteLine("Enter the aadhaar, pan and propertyvalue");
+            aadhaar = Convert.ToInt32(Console.ReadLine());
+            pan=Console.ReadLine();
+            propertyValue = Convert.ToDouble(Console.ReadLine());
+
+            //Console.WriteLine("Are you eligible for Business loan "+((pan=="yes")&&(aadhaar!=0)&&(propertyValue>=7.5)));
+
+            Console.WriteLine("Are you eligible to get Credit card "+(aadhaar!=0&&pan=="yes"||propertyValue>=3.0));
+
+        }
+        public void relational()
+        {
+            // > >= < <= == !=
+            /*
+            dynamic age = 0;
+            Console.WriteLine("Enter the kid's age ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Do i have concession for age "+age+" to book ticket "+(age<=3));
+
+            Console.WriteLine("Can i visit to Horror show as my age is "+age+" to watch "+(age>=12));
+
+            Console.WriteLine("Can i become parliment candidate as my age is "+age+" in the election "+(age>17));
+            */
+
+            string skill = "";
+            Console.WriteLine("Tell us technology in experience");
+            skill=Console.ReadLine();
+            Console.WriteLine("Will i get job as backend developer " + (skill == "c#"));
+            Console.WriteLine("Will i get onsite in PAssport seva project "+(skill!="QC"));
+
+        }
+        public void bitwise()
+        {
+            // & | ^ >> <<
+            // float and double
+
+            dynamic yet = 55,pic=345;
+            Console.WriteLine(pic >> 5);
+
+            Console.WriteLine(yet<<7);
+
+            /*
+             * 4096 2048 1024 512 256 128 64 32 16 8 4 2 1
+             *         0    0   0   1   0  1  0  1 1 0 0 1   >> 345
+             *         0    0   0   0   0  0  0  0 1 0 1 0   >> 10
+             *         0    0   0   0   0  0  1  1 0 1 1 1   >> 55
+             *    1    1    0   1   1   1  0  0  0 0 0 0 0   >> 7040
+             * eg: 73
+             *    0    0   0   0   0  1  0  0 1 0 0 1   >> 73
+             *    0    0   0   0   0  1  1  1 1 0 1 0   >> 122 'z'
+             *    0    0   1   0   0  0  0  0 1 0 1 0   >> 522
+             *    0    0   1   0   0  1  1  1 0 0 0 0   >> 620
+             *    
+             *    0    0   0   0   0  1  1  1 1 0 1 0   >> 122 'z'
+             *    0    0   0   0   0  0  0  0 1 1 0 0   >> 12
+             *    0    0   0   0   0  1  1  1 0 1 1 0   >> 126 >> hai
+             *    0    0   0   0   0  1  1  1 1 0 1 0   >> 122 >> hey
+             *    0    0   0   0   0  0  0  0 1 1 0 0   >> 12 >> hai
+             *    
+             *    0    0   0   0   0  1  0  1 1 0 0 0   >> 88
+             *    0    0   0   0   0  1  0  1 1 0 0 0   >> 88
+             *    
+             *    0    0   0   0   0  0  0  0 1 1 0 0   >> 12
+             *    0    0   0   0   0  1  0  0 1 1 0 0   >> 76
+             *    0    0   0   0   0  0  0  0 1 1 0 0   >> 12
+             *    
+             *    0    0   0   0   0  0  0  0 1 1 0 0   >> 12
+             *    0    0   0   0   0  1  0  0 0 1 0 0   >> 68
+             *    0    0   0   0   0  1  0  0 1 1 0 0   >> 76
+             *    
+             */
+
+            char hai = 'z';int hey = 12;
+            Console.WriteLine(hai&88);
+            Console.WriteLine(hey&76);
+
+            Console.WriteLine(hey | 'D');
+
+            Console.WriteLine(hai^522);
+
+            hai ^=(char) hey;
+            hey ^= hai;
+            hai ^= (char)hey;
+
+            Console.WriteLine(hai+" "+hey);
+
+        }
         public void precedence()
         {
             // Bracket Of(Unary) Divide Multiply Addition Subtraction
