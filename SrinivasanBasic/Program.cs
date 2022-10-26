@@ -1,12 +1,8 @@
-﻿// Operators : Arithmetic: + - * / %
+﻿using SrinivasanBasic;
 
-using SrinivasanBasic;
-
-Operators op = new Operators();
-//op.arithmetic();
-//op.unary();
-//op.shortHand();
-//op.precedence();
-//op.bitwise();
-//op.relational();
-op.logicals();
+ControlStatements con = new ControlStatements();
+//con.demoIf();
+//con.demoIfElse();
+//con.demoNestedIf();
+//con.demoElseIfLadder();
+con.demoSwitch();
