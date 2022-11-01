@@ -1,35 +1,26 @@
 ﻿using SrinivasanBasic;
 
-Blocks bk = new Blocks();
-bk.dollarToRupees(9000);
-bk.dollarToRupees(700);
-bk.dollarToRupees(0);
-bk.dollarToRupees(12);
+Members mem = new Members();
+mem.max = 123;
+mem.actSome();
+mem.doSome();
 
-float term=bk.cmToInch(156);
-Console.WriteLine(term);
-
-//bk.eric(2, 3);
-//bk.access();
-
-//int ot=bk.otp();
-//Console.WriteLine(ot);
-
-Console.WriteLine(bk.otp());
+Members mem2 = new Members();
+mem2.max = 56666;
+mem2.actSome();
+mem2.doSome();
 
 
-// call by value
-int cosmo = 45, delta = 90;
-Console.WriteLine(cosmo+" "+delta);
-bk.just(cosmo, delta);
-Console.WriteLine(cosmo + " " + delta+" @ main");
+Builds.hai = "Razak Mohamed S";
+Builds.showSome();
 
-// call by reference
-bk.just(ref cosmo, ref delta);
-Console.WriteLine(cosmo + " " + delta + " @ main");
+Builds build1 = new Builds();
+//build1.showSome();
+build1.viewSome();
 
-int j=bk.hello();
-Console.WriteLine(j);
+Builds.hai = "Zealous academy";
 
-Blocks.swaps(out cosmo, out delta);
-Console.WriteLine("After out " + cosmo + " and " + delta);
+Builds build2 = new Builds();
+
+build1.viewSome();
+build2.viewSome();
