@@ -1,12 +1,14 @@
 ﻿using SrinivasanBasic;
 
-Recursive rec=new Recursive();
-//rec.grant();
+//CreationArray create = new CreationArray();
+//create.createArrOne();
+//create.createArrTwo();
 
-rec.seekSome();
+//BasicArrOperation.findMax();
+//BasicArrOperation.findTwoMax(new int[] { 92,33,26,134,100});
+//int[] wind = { 140,256,342, 500};
+//BasicArrOperation.findTwoMax(wind);
 
-//rec.retrospective();
-
-rec.range(1, 10);
-
-rec.range(101, 200);
+ArrayCall call = new ArrayCall();
+//call.update();
+call.dyn();
