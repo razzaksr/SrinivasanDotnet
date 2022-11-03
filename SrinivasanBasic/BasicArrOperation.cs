@@ -8,6 +8,28 @@ namespace SrinivasanBasic
 {
     internal class BasicArrOperation
     {
+        public static void facting(int[] arr)
+        {
+            int number = 0, fact=1;
+            for (int index=0;index<arr.Length;index++)
+            {
+                number = arr[index];fact = 1;
+                for (; number > 0; number--)
+                {
+                    fact *= number;
+                }
+                Console.WriteLine(fact+" is factorial to " + arr[index]);
+            }
+        } 
+        public static void arraySum(params double[] arr)
+        {
+            double sum = 0;
+            for (int index=0;index<arr.Length;index++)
+            {
+                sum += arr[index];
+            }
+            Console.WriteLine(sum);
+        }
         public static void findMax()
         {
             char[] yet = { 'W','y','k','Z','R','a','m','s' };
