@@ -1,26 +1,9 @@
 ﻿using SrinivasanBasic;
 
-//BasicArrOperation.arraySum(4, 89.4, 13.5, 75, 5.5, 69.4, 46.7, 35.67, 45.7);
-//BasicArrOperation.facting(new int[] { 12,3,2,4,9,7,5});
+ArrSort ast= new ArrSort();
 
-/*
-int pos=ArrSearch.linear("Downey");
-Console.WriteLine(pos);
+//ast.selection(new double[] { 89.4, 23.4, 543.4, 898.5, 6.5, 65, 4, 775.65 });
+//ast.selection(98,34,24,56,6,87,45,6,65,4,5,76,8,767);
 
-Console.WriteLine(ArrSearch.linear("Hiddlston"));
-Console.WriteLine(ArrSearch.linear("RObert"));
-Console.WriteLine(ArrSearch.linear("Evans"));
-*/
-
-//ArrSearch sear = new ArrSearch();
-//int pos=sear.binary(0,sear.hey.Length-1,19.6);
-//Console.WriteLine(pos);
-
-//Console.WriteLine(sear.binary(0, sear.hey.Length,100.5));
-//Console.WriteLine(sear.binary(0, sear.hey.Length, 4.5));
-
-int[] an = { 12, 3, 2, 4, 9, 7, 5 };
-
-Array.Sort(an);
-
-Array.ForEach(an, a =>Console.WriteLine(a));
+ast.bubble(new int[] { 98, 34, 23, 2, 54, 43, 4, 5, 57, 6, 65, 5, 4, 65 });
+ast.bubble(993,34,56,34,6,235,78,6,87,657,454,24,56);
