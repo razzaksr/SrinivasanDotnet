@@ -15,7 +15,12 @@ namespace SrinivasanOOP
             int[][] arr = getHai();
             for (int row=0;row<arr.Length;row++)
             {
-                Array.ForEach(arr[row], val => Console.WriteLine(val));
+                //Array.ForEach(arr[row], val => Console.WriteLine(val));
+                for (int col = 0; col < arr[row].Length;col++)
+                {
+                    Console.Write(arr[row][col]+" ");
+                }
+                Console.WriteLine();
             }
         }
     }

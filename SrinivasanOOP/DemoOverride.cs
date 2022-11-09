@@ -8,7 +8,11 @@ namespace SrinivasanOOP
 {
     internal class DemoOverride:Mars
     {
-        double[] quick = { 9.5,31.5,34.5,12.7,8.5,8.90,35.67,23.5,23.6,4.5,6.12};
+        double[] quick = { 9.5,31.5,34.5,12.7,8.5,8.90,35.67,23.5,23.6,4.5};
+        public double[] getQuick()
+        {
+            return quick;
+        }
         public void search(double data)
         {
             for (int index=0;index<quick.Length; index++)
